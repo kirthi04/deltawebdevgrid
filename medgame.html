@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h1 {
+  color:rgba(19, 17, 17, 1);
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px #bb1c1c;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+.button {
+  background-color: 4CAF50; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 2px;
+  width: 30px;
+  height: 10px;
+  margin-left: 10px;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #bb1c1c;
+  width: 100px;
+  height: 50px;
+  border-radius: 12px;
+  margin-left: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: frontheadn;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.button1:hover {
+  background-color: #bb1c1c;
+  color: white;
+}
+@keyframes frontheadn {
+  0% {transform: rotatey(0deg);}
+  50% {transform: rotatey(180deg);}
+  100% {transform: rotatey(360deg);}
+}
+#container {
+  width: 450px;
+  height: 360px;
+  background: white;
+  margin-left: -90px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(10,90px);
+  grid-template-rows: repeat(4, 90px); 
+color:  #bb1c1c;
+overflow: hidden;
+}
+#container .box{
+    background-color: black;
+    display: grid;
+    box-sizing: border-box;
+    border: 1px solid rgb(253, 248, 248);
+  border-radius: 5px;  
+}
+#trial1{
+  position: relative;
+  animation: blocke1 10s infinite linear;
+}
+
+@keyframes blocke1{
+0%{left: 0px;}
+20%{left:-90px;}
+40%{left:-180px;}
+60%{left:-270px;}
+80%{left: -360px;}
+100%{left: -450px;}
+
+}
+#trial2{
+  position: relative;
+  left: -450px;
+  animation: blocke2 10s infinite linear;
+}
+
+@keyframes blocke2{
+0%{left: -450px;}
+20%{left: -360px;}
+40%{left: -270px;}
+60%{left: -180px;}
+80%{left: -90px;}
+100%{left: 0px;}
+
+}
+#container .box h2
+{
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+}
+p{
+  font-size: 30px;
+  font-style: oblique;
+  text-shadow: 2px 2px 5px #bb1c1c;
+}
+.leftSideBar{display:block;}
+.rightSideBar{display:block;}
+@media screen and (max-width: 800px) {
+    #container {
+  width: 300px;
+  height: 240px;
+  background: white;
+  margin-left: 5px;
+  position:static;
+  top: auto;
+  left: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(10,60px);
+  grid-template-rows: repeat(4, 60px); 
+  color:  #bb1c1c;
+  overflow: hidden;
+}
+#trial1{
+  position: relative;
+  animation: blocke1 10s infinite linear;
+}
+
+@keyframes blocke1{
+0%{left: 0px;}
+20%{left:-60px;}
+40%{left:-120px;}
+60%{left:-180px;}
+80%{left: -240px;}
+100%{left: -300px;}
+
+}
+#trial2{
+  position: relative;
+  left: -300px;
+  animation: blocke2 10s infinite linear;
+}
+@keyframes blocke2{
+0%{left: -300px;}
+20%{left: -240px;}
+40%{left: -180px;}
+60%{left: -120px;}
+80%{left: -60px;}
+100%{left: 0px;}
+
+}
+#container .box h2
+{
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+p{
+  font-size: 20px;
+  font-style: oblique;
+}
+.button1{
+    width: 70px;
+  height: 25px;
+  font-size: 10px;
+}
+}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <p class="clock"></p>
+<h1>FORTY  SHADES  OF  GRAY</h1>
+<p id="final">Best Times are: </p>
+<div id="container">
+  <div class="box  al1" id="trial1"><h2 class="el1">1</h2></div>
+  <div class="box al2" id="trial1"><h2 class="el2">1</h2></div>
+    <div class="box al3" id="trial1"><h2 class="el3">1</h2></div>
+    <div class="box al4 " id="trial1"><h2 class="el4">1</h2></div>
+    <div class="box al5" id="trial1"><h2 class="el5">1</h2></div>
+   <div class="box al1" id="trial1"><h2 class="el1">1</h2></div>
+    <div class="box al2" id="trial1"><h2 class="el2">1</h2></div>
+    <div class="box al3" id="trial1"><h2 class="el3">1</h2></div>
+    <div class="box al4" id="trial1"><h2 class="el4">1</h2></div>
+    <div class="box al5" id="trial1"><h2 class="el5">1</h2></div>
+    <div class="box al6" id="trial2"><h2 class="el6">1</h2></div>
+    <div class="box al7" id="trial2"><h2 class="el7">1</h2></div>
+    <div class="box al8" id="trial2"><h2 class="el8">1</h2></div>
+    <div class="box al9" id="trial2"><h2 class="el9">1</h2></div>
+    <div class="box al10" id="trial2"><h2 class="el10">1</h2></div>
+    <div class="box al6" id="trial2"><h2 class="el6">1</h2></div>
+    <div class="box al7" id="trial2"><h2 class="el7">1</h2></div>
+    <div class="box al8" id="trial2"><h2 class="el8">1</h2></div>
+    <div class="box al9" id="trial2"><h2 class="el9">1</h2></div>
+    <div class="box al10" id="trial2"><h2 class="el10">1</h2></div>
+    <div class="box al11" id="trial1"><h2 class="el11">1</h2></div>
+    <div class="box al12" id="trial1"><h2 class="el12">1</h2></div>
+    <div class="box al13" id="trial1"><h2 class="el13">1</h2></div>
+    <div class="box al14" id="trial1"><h2 class="el14">1</h2></div>
+    <div class="box al15" id="trial1"><h2 class="el15">1</h2></div>
+    <div class="box al11" id="trial1"><h2 class="el11">1</h2></div>
+    <div class="box al12" id="trial1"><h2 class="el12">1</h2></div>
+    <div class="box al13" id="trial1"><h2 class="el13">1</h2></div>
+    <div class="box al14" id="trial1"><h2 class="el14">1</h2></div>
+    <div class="box al15" id="trial1"><h2 class="el15">1</h2></div>
+    <div class="box al16" id="trial2"><h2 class="el16">1</h2></div>
+    <div class="box al17" id="trial2"><h2 class="el17">1</h2></div>
+    <div class="box al18" id="trial2"><h2 class="el18">1</h2></div>
+    <div class="box al19" id="trial2"><h2 class="el19">1</h2></div>
+    <div class="box al20" id="trial2"><h2 class="el20">1</h2></div>
+    <div class="box al16" id="trial2"><h2 class="el16">1</h2></div>
+    <div class="box al17" id="trial2"><h2 class="el17">1</h2></div>
+    <div class="box al18" id="trial2"><h2 class="el18">1</h2></div>
+    <div class="box al19" id="trial2"><h2 class="el19">1</h2></div>
+    <div class="box al20" id="trial2"><h2 class="el20">1</h2></div>
+    
+</div>
+<button class="button1" onclick="restartfun()">RESTART</button>
+<audio>
+    <source src="sample3.mp3" type="audio/mpeg">
+  </audio>
+<script>
+ alert("Click ok to start."); 
+ const audii = document.querySelector('audio');
+ function crerandom()
+ {
+     var numar=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+var n=20,k;
+for(i=1;i<=20;i++)
+{ var t=numar[Math.floor(Math.random() * numar.length)];
+  document.getElementsByClassName("el"+i)[0].innerHTML=t;
+    document.getElementsByClassName("el"+i)[1].innerHTML=t;
+    document.getElementsByClassName("al"+i)[0].style.opacity = 0.5 + (t/100);
+    document.getElementsByClassName("al"+i)[1].style.opacity = 0.5 + (t/100);
+   for (k=0; k<n; k++) 
+    {  if (numar[k] == t) 
+        { break;
+        } 
+    }
+  numar.splice(k,1);
+ }
+ }
+ crerandom();
+  let secondCount = 0;
+       let stopWatch;
+       const displayPara = document.querySelector('.clock');
+       let t;
+var clear;
+function displayCount() {
+        
+        let seconds = Math.floor(secondCount /100);
+        let milli=Math.floor(secondCount);
+        if(milli>=99)
+        {
+            milli=milli-(seconds*100);
+        }
+       
+
+       
+        displayPara.textContent ="TIME ELAPSED: " +  seconds+"."+ milli;
+ t=seconds+"."+milli;
+       
+        secondCount++;
+      }
+      stopWatch = setInterval(displayCount, 10);
+      let arr=[];
+let brr=[];
+let arr2=[];
+let brr2=[];
+for(let i=1;i<=20;i++){
+  arr[i]=document.getElementsByClassName("el"+i)[0];
+  arr2[i]=document.getElementsByClassName("el"+i)[1];
+  brr[i]=document.getElementsByClassName("al"+i)[0];
+  brr2[i]=document.getElementsByClassName("al"+i)[1];
+  document.getElementsByClassName("al"+i)[0].onclick=( ) =>{changetext(arr[i],brr[i],arr2[i],brr2[i])}
+  document.getElementsByClassName("al"+i)[1].onclick=( ) =>{changetext(arr[i],brr[i],arr2[i],brr2[i])}
+}
+initialcounter=21;
+
+function changetext(element,element2,elem,elem2){
+  
+   if(initialcounter-element.innerHTML===20 && initialcounter==21 )
+ { element.innerHTML=initialcounter;
+  elem.innerHTML=initialcounter;
+    audii.play();
+    element2.style.opacity = 0.5 + (initialcounter/100);
+    elem2.style.opacity = 0.5 + (initialcounter/100);
+  initialcounter++;}
+
+else if (initialcounter-element.innerHTML===20 && initialcounter<=40 && initialcounter>21) {
+  element.innerHTML=initialcounter;
+  elem.innerHTML=initialcounter;
+    audii.play();
+    element2.style.opacity = 0.5 + (initialcounter/100);
+    elem2.style.opacity = 0.5 + (initialcounter/100);
+    initialcounter++;
+}
+
+
+else if (initialcounter-element.innerHTML===20 && initialcounter>40 && initialcounter<60 ) {
+  element.innerHTML=initialcounter;
+  elem.innerHTML=initialcounter;
+    audii.play();
+    element2.style.opacity = 0.5 + (initialcounter/100);
+    elem2.style.opacity = 0.5 + (initialcounter/100);
+    initialcounter++;
+} 
+else if (initialcounter-element.innerHTML===20 && initialcounter>40 && initialcounter==60) {
+  element.innerHTML=initialcounter;
+  elem.innerHTML=initialcounter;
+    audii.play();
+    element2.style.opacity = 0.5 + (initialcounter/100);
+    elem2.style.opacity = 0.5 + (initialcounter/100);
+   initialcounter++;
+}
+else if (initialcounter-element.innerHTML===20 && initialcounter>60 && initialcounter<80 ) {
+  element.innerHTML=" ";
+  elem.innerHTML=" ";
+    audii.play();
+    initialcounter++;
+} 
+else if (initialcounter-element.innerHTML===20 && initialcounter>60 && initialcounter==80) {
+  element.innerHTML=" ";
+  elem.innerHTML=" ";
+    audii.play();
+    clearInterval(stopWatch);
+    localStorage.setItem(t,"blah1");
+    mynewfunction();
+    initialcounter++;
+    myfunction();
+}
+}
+function mynewfunction()
+{
+var l, i,j,ks;
+var topscore=[];
+var ans=Number(localStorage.key(0));
+var count=0;
+  for( i=0; i<localStorage.length ;i++)
+{var c=localStorage.key(i);
+  if(localStorage.getItem(c)=="blah1")
+  {topscore[count]=Number(localStorage.key(i));
+  count++;
+  }
+}
+  for( i=0; i<count ; i++)
+  {
+    for(j=0; j<count ; j++)
+    {
+      if((topscore[i]) < (topscore[j]))
+      {
+        ks=topscore[i];
+        topscore[i]=topscore[j];
+        topscore[j]=ks;
+      }
+    }
+  }
+  for(i=0 ; i<5 ;i++)
+  {
+document.getElementById("final").innerHTML += topscore[i] + "<br>";
+}
+}
+function myfunction()
+{
+   
+ 
+  alert("YOUR TIME IS" + t );
+
+}
+function restartfun()
+{
+ document.location.reload();
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    h1{
+ color:cornflowerblue;
+  animation-name: fronthead;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  text-align: center;
+}
+h2{
+   color:cornflowerblue;
+    animation-name: frontheadn;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+ text-align: center;
+ margin-top: 200px;
+}
+
+@keyframes fronthead {
+  0% {color: red;}
+  50% {color: yellow;}
+  100% {color: green;}
+}
+
+@keyframes frontheadn {
+  0% {font-size:smaller;}
+  25% {font-size:small;}
+  50% {font-size:medium;}
+  75% {font-size:large;} 
+}
+.sub {
+ margin-top: 400px;
+  
+  color: white;
+  width: 150px;
+  height: 40px;
+  padding: 32px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+ opacity: 0.5;
+}
+
+.opt1 {background-color: rgb(253, 0, 0);
+margin-left: 350px;
+margin-top: 200px;} /* Blue */
+.opt2 {background-color: yellow;
+    margin-left: 50px;
+} 
+.opt3 {background-color: green;
+margin-left: 50px;}
+.opt1:hover{
+    opacity: 1;
+}
+.opt2:hover{
+    opacity: 1;
+}
+.opt3:hover{
+    opacity: 1;
+}
+body{
+    background-color: rgb(10, 10, 10);
+}
+@media screen and (max-width: 600px) {
+   .sub   {
+    display: block;
+    float: none;
+   margin-left: 0px;
+   margin-top: 0px;
+  }
+  h2{
+      margin-top: 0px;
+  }
+  }
+</style>
+</head>
+<body>
+    <h1>FORTY SHADES OF GRAY</h1>
+
+<a class="sub opt1" href="easygame.html" >EASY</a>
+<a class="sub opt2" href="medgame.html">MEDIUM</a>
+<a class="sub opt3" href="hardgame.html">HARD</a>
+
+<h2>SELECT THE LEVEL OF DIFFICULTY</h2>
+
+</body>
